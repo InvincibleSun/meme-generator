@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body,
+html {
+  font-family: "Lucida Sans", sans-serif;
+  height: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f3e09659;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------HEADER----------------- */
+header {
+  display: flex;
+  align-items: center;
+  height: 95px;
+  background: linear-gradient(90deg, #0cd99b 1.18%, #ffdd58 100%);
+  color: rgba(0, 0, 0, 0.709);
+  padding: 20px;
+}
+.header--image {
+  height: 100%;
+  margin-right: 26px;
+  width: 70px;
+  height: 70px;
+}
+.header--title {
+  font-size: 1.45rem;
+  margin-right: auto;
+  letter-spacing: 0.2px;
+  text-shadow: 1.1px 1.2px 0 rgb(39, 58, 48);
+}
+
+/* ---------------------MAIN---------------- */
+main {
+  padding: 36px;
+  flex: 1 0 auto;
+}
+
+form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+form input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+form button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #0cd99b 1.14%, #ffdd58 100%);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 50px;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.meme--image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 30px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000,
+    2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 5px;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+footer p:hover {
+  color: rgb(29, 185, 102);
+}
