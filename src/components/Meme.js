@@ -19,9 +19,12 @@ function Meme() {
   }
 
   useEffect(() => {
-    fetch("https://api.imgflip.com/get_memes")
-      .then((res) => res.json())
-      .then((data) => setAllMemesImg(data.data.memes));
+    async function getRequest() {
+      const res = await fetch("https://api.imgflip.com/get_memes");
+      const data = await res.json();
+      setAllMemesImg(data.data.memes);
+    }
+    getRequest();
   }, []);
 
   function getNewImg(event) {
@@ -37,13 +40,14 @@ function Meme() {
 
   return (
     <main>
-      <form>
+      <form autocomplete="on">
         <input
           type="text"
           placeholder="Top text..."
           name="topText"
           value={dataMeme.topText}
           onChange={handlerChange}
+          autofocus="true"
         />
         <input
           type="text"

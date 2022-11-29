@@ -8,7 +8,7 @@ function Footer() {
           href="https://github.com/InvincibleSun/meme-generator"
           title="Link to GitHub"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noOpener noReferrer"
         >
           Open source code on GitHub
         </a>
