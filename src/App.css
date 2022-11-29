@@ -122,3 +122,75 @@ footer p {
 footer p:hover {
   color: rgb(29, 185, 102);
 }
+
+@media (max-width: 525px) {
+  .meme--text {
+    font-size: 1.5em;
+    margin: 26px 0;
+  }
+  .meme {
+    padding: 0px;
+  }
+  form {
+    gap: 12px;
+  }
+  main {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 447px) {
+  .meme--text {
+    font-size: 1.3em;
+    margin: 20px 0;
+  }
+  .header--title {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 0 rgb(39, 58, 48);
+  }
+  form button {
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 40px;
+  }
+  form input {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 377px) {
+  form button {
+    font-size: 0.65rem;
+    font-weight: 400;
+  }
+  form input {
+    font-size: 0.65rem;
+  }
+  .meme--text {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+}
+@media (max-width: 357px) {
+  form button {
+    font-size: 0.6rem;
+  }
+  form input {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 336px) {
+  form button {
+    font-size: 0.55rem;
+  }
+  form input {
+    font-size: 0.55rem;
+  }
+  .header--image {
+    margin-right: 12px;
+  }
+  .meme--text {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+}
